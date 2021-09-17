@@ -8,14 +8,14 @@ using namespace std;
 
 int main(){
 
-    listasimple milista;
+    listasimple mylist;
 
-    int arreglo[] = {1,3,2,6,1};
-    int *punteroArreglo;
+    int array[] = {1,3,2,6,1};
+    int *pointerArray;
 
-    punteroArreglo = arreglo;
-    sortBySelectionSort(punteroArreglo,5);
+    pointerArray = array;
+    sortBySelectionSort(pointerArray,5);
 
-    cout << "Está vacía la lista: " << milista.isEmpty() << " , " 
-    << "Cantida de elementos: " << milista.getQuantity() << endl;
+    cout << "Está vacía la lista: " << mylist.isEmpty() << " , " 
+    << "Cantida de elementos: " << mylist.getQuantity() << endl;
 }

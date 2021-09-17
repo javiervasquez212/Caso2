@@ -3,26 +3,26 @@
 
 using namespace std;
 
-void sortBySelectionSort(int *arreglo, int tamanyoArreglo){
+void sortBySelectionSort(int *array, int sizeArray){
 
-    for(int i = 0; i < tamanyoArreglo-1; i++){
+    for(int i = 0; i < sizeArray-1; i++){
 
-        int numeroMenor = arreglo[i];
+        int smallerNumber = array[i];
 
-        for(int x = i+1; x < tamanyoArreglo; x ++){
+        for(int x = i+1; x < sizeArray; x ++){
 
-            int numeroMayor = arreglo[x];
+            int biggerNumber = array[x];
 
-            if (numeroMenor > numeroMayor){
+            if (smallerNumber > biggerNumber){
 
-                swap(arreglo[i],arreglo[x]);
+                swap(array[i],array[x]);
 
             }
         }
     }
-    for(int i = 0; i < tamanyoArreglo; i++){
+    for(int i = 0; i < sizeArray; i++){
 
-        cout << arreglo[i] << endl;
+        cout << array[i] << endl;
         }
 }
 
